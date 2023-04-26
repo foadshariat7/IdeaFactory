@@ -10,11 +10,11 @@
 
 
 ### Progress and Issues
-
+* Start creating the user authentication component for both frontend and backend
 
 
 ### Plans and goals for the next week
-
+* Finish the implementation of the user authentication component and add to the main branch
 
 
 
@@ -27,9 +27,10 @@
 
 
 ### Progress and Issues
-
+* Allan Ji: Created frontend interface of Signup and Login and tried to connected to the Firebase SDK. Some bugs remains possibly due to update of Firebase. 
 
 
 
 ### Plans and goals for the next week
-
+* Allan Ji: Implement the UI design of user login and signup
+* Allan Ji: Connect user authentication with Firebase
