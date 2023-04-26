@@ -2,8 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Signup from './components/Signup.jsx'
-import { Container } from 'react-bootstrap'
+// import Signup from './components/Signup.jsx'
+import MainPage from './MainPage'
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
     //   </Container>
 
     // </AuthProvider>
-    <Signup />
+    // <Signup />
+    <MainPage ></MainPage>
   )
 }
-
 export default App
