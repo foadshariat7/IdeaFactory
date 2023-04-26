@@ -18,11 +18,12 @@ connectToDb((err) => {
 
 // sample route
 app.get('/', (req, res) => {
-    res.send('hihi');
+    res.send('sample route');
 });
 
+// sample route to fetch stuff from user collection
 app.get('/users', (req, res) => {
-    let result
+    let result = []
 
     db.collection('Users')
         .find()
