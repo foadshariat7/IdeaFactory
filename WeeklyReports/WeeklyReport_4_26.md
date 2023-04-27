@@ -11,11 +11,12 @@
 
 ### Progress and Issues
 * Start creating the user authentication component for both frontend and backend
+* Start finishing simple UI without interaction
 
 
 ### Plans and goals for the next week
 * Finish the implementation of the user authentication component and add to the main branch
-
+* Finish basic UI implementation and integrate with backend APIs
 
 
 ## Contributions of individual team members
@@ -29,9 +30,11 @@
 ### Progress and Issues
 * Allan Ji: Created frontend interface of Signup and Login and tried to connected to the Firebase SDK. Some bugs remains possibly due to update of Firebase. 
 * Bohan Wu: Created MongoDB database and implemented a connecting tool JS file. Basic fetch functionalty needs more testing.
+* Zhengrui Sun: Implemented the user interface of landing page
 
 
 ### Plans and goals for the next week
 * Allan Ji: Implement the UI design of user login and signup
 * Allan Ji: Connect user authentication with Firebase
 * Bohan Wu: Implement basic functionalities for database interactions (fetch requests for different requirements etc.).
+* Zhengrui Sun: Implement the user interface for user profile page and project upload page 
