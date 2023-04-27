@@ -37,6 +37,6 @@
 ### Plans and goals for the next week
 * Allan Ji: Implement the UI design of user login and signup
 * Allan Ji: Connect user authentication with Firebase
-* Bohan Wu: Implement basic functionalities for database interactions (fetch requests for different requirements etc.).
+* Bohan Wu, Caleb Huang: Implement basic functionalities for database interactions (fetch requests for different requirements etc.).
 * Zhengrui Sun: Implement the user interface for user profile page and project upload page
 * Yansong Liu, Dicheng Wu: finish writing api for posting and start to work on searching api
