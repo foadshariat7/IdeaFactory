@@ -16,7 +16,7 @@ function App() {
 
     // </AuthProvider>
     // <Signup />
-    <MainPage ></MainPage>
+    <div>a</div>
   )
 }
 export default App

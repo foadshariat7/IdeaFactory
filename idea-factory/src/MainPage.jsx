@@ -1,7 +1,8 @@
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import ProjectRow from './components/ProjectRow';
-
+import { Pagination } from 'antd';
 const { Header, Content, Footer } = Layout;
+
 const MainPage = () => {
   const {
     token: { colorBgContainer },
@@ -9,12 +10,12 @@ const MainPage = () => {
   return (
     <Layout className="layout">
       <Header>
-        <div className="logo" />
+        <div className="logo"></div>
         <Menu
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={['2']}
-          items={new Array(15).fill(null).map((_, index) => {
+          items= {new Array(3).fill(null).map((_, index) => {
             const key = index + 1;
             return {
               key,
@@ -47,7 +48,16 @@ const MainPage = () => {
           <ProjectRow></ProjectRow>
           <ProjectRow></ProjectRow>
           <ProjectRow></ProjectRow>
+          <ProjectRow></ProjectRow>
+          <ProjectRow></ProjectRow>
+          <ProjectRow></ProjectRow>
+          <Pagination 
+            style={{
+              textAlign: 'center',
+           }}
+          defaultCurrent={6} total={500} />;
         </div>
+
       </Content>
       <Footer
         style={{
@@ -59,5 +69,6 @@ const MainPage = () => {
     </Layout>
   );
 };
+
 export default MainPage;
 

@@ -8,7 +8,7 @@ const UserProfile = () => {
     return (
         <div className="container">
 
-
+            user profile
         </div>
     )
 }
