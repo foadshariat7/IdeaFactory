@@ -1,6 +1,6 @@
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import { Card } from 'antd';
 import ProjectRow from './components/ProjectRow';
+
 const { Header, Content, Footer } = Layout;
 const MainPage = () => {
   const {
