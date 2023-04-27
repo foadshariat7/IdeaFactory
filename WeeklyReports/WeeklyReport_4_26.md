@@ -29,7 +29,7 @@
 
 ### Progress and Issues
 * Allan Ji: Created frontend interface of Signup and Login and tried to connected to the Firebase SDK. Some bugs remains possibly due to update of Firebase.
-* Bohan Wu: Created MongoDB database and implemented a connecting tool JS file. Basic fetch functionalty needs more testing.
+* Bohan Wu, Caleb Huang: Created MongoDB database and implemented a connecting tool JS file. Basic fetch functionalty needs more testing.
 * Zhengrui Sun: Implemented the user interface of landing page
 * Yansong Liu, Dicheng Wu: set up vue + react, start to implement api.
 
