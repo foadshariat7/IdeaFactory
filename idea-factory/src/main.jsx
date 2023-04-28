@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import MainPage from './MainPage.jsx';
 import UserProfile from './UserProfile.jsx';
+import ProjectUploadPage from './ProjectUploadPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/userProfile",
     element: <UserProfile></UserProfile>
+  }, 
+  {
+    path: "/projectUpload",
+    element: <ProjectUploadPage></ProjectUploadPage>
   }
 ]);
 
