@@ -1,5 +1,5 @@
 import { Breadcrumb, Layout, Menu, theme, Input, Button } from 'antd';
-import { DownloadOutlined } from '@ant-design/icons';
+import { ProfileOutlined, UploadOutlined } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom'
 import ProjectRow from './components/ProjectRow';
 import { Pagination } from 'antd';
@@ -29,10 +29,15 @@ const MainPage = () => {
         />
         <Search placeholder='Search' allowClear onSearch={onSearch} style={{ width: 200 }}/>
         <NavLink to={"/userProfile"}>
-          <Button type="primary" icon={<DownloadOutlined />} size={20}>
+          <Button type="primary" icon={<ProfileOutlined />} size={20}>
             Profile
           </Button>
         </NavLink>
+        <NavLink to={"/projectUpload"}>
+              <Button type="primary" icon={<UploadOutlined />} size={20}>
+                Upload
+              </Button>
+            </NavLink>
       </Header>
       <Content
         style={{
