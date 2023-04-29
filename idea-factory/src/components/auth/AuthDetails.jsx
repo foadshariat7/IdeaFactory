@@ -65,7 +65,7 @@ const AuthDetails = () => {
 
     return (
         <div>
-            {authUser ? <><p><h1>Logged in as {authUser.email} <button onClick={handleSignOut}>SignOut</button></h1></p></> : <><p><h1>Not logged in</h1></p></>}
+            {authUser ? <><h1>Logged in as {authUser.email} <button onClick={handleSignOut}>SignOut</button></h1></> : <><h1>Not logged in</h1></>}
         </div>
     )
 }
