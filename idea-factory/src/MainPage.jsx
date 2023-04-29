@@ -82,7 +82,7 @@ const MainPage = () => {
             style={{
               textAlign: 'center',
            }}
-          defaultCurrent={6} total={500} />;
+          defaultCurrent={6} total={500} />
         </div>
 
       </Content>

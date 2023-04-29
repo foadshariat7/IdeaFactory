@@ -28,33 +28,6 @@ const SignUp = () => {
 
     }
     return (
-<<<<<<< HEAD
-        // <div className='sign-in-container'>
-        //     <form onSubmit={handleSignUp}>
-        //         <h1>Create a new account for Idea Factory!</h1>
-        //         <input type="email" placeholder='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
-        //         <input type="password" placeholder='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)}></input>
-        //         <button type="submit">SignUp</button>
-        //     </form>
-        // </div>
-        <>
-            <Card>
-                <Card.Body>
-                    <h2 className="text-center mb-4"> Sign Up</h2>
-                    <Form onSubmit={handleSignUp}>
-                        <Form.Group id="email">
-                            <Form.Label>Email</Form.Label>
-                            <Form.Control type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                        </Form.Group>
-                        <Form.Group id="password">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                        </Form.Group>
-                        <Button type="submit" className="w-100">Sign Up</Button>
-                    </Form>
-                </Card.Body>
-            </Card>
-=======
 
         <div className='sign-in-container'>
 
@@ -129,7 +102,6 @@ const SignUp = () => {
                 </Form.Item>
             </Form>
 
->>>>>>> refs/remotes/origin/frontend
             <div className="w-100 text-center mt-2">
                 Already have an account?
                 <Link to="/signIn">
