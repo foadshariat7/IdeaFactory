@@ -9,6 +9,7 @@ import ProjectRow from './components/ProjectRow';
 import UserRelatedProjects from './components/UserRelatedProjects';
 import Skill from './components/Skill';
 import Experience from './components/Experience';
+import BasicInformation from './components/BasicInformation';
 
 const UserProfile = () => {
     const {
@@ -44,6 +45,7 @@ const UserProfile = () => {
               <Breadcrumb.Item>Home</Breadcrumb.Item>
               <Breadcrumb.Item>User Profile</Breadcrumb.Item>
             </Breadcrumb>
+            <BasicInformation></BasicInformation>
             <Experience></Experience>
             <Skill></Skill>
             <UserRelatedProjects></UserRelatedProjects>

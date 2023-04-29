@@ -4,7 +4,7 @@ import { Card, Col, Row } from 'antd';
 const Skill = () => {
   return (
     <Card title="Skills">
-      <Row gutter={20}>
+      <Row gutter={25}>
         <Col span={5}>
           <Card type="inner">
             Java
@@ -40,7 +40,7 @@ const Skill = () => {
             Java
           </Card>
         </Col>
-        <Col span={5}>
+                <Col span={5}>
           <Card type="inner">
             Java
           </Card>
