@@ -11,6 +11,7 @@ import UserProfile from './UserProfile.jsx';
 import ProjectUploadPage from './ProjectUploadPage.jsx';
 import SignIn from './components/auth/SignIn.jsx'
 import SignUp from './components/auth/SignUp.jsx'
+import AuthDetails from './components/auth/AuthDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/signUp",
     element: <SignUp />,
+  },
+  {
+    path: "/authDetails",
+    element: <AuthDetails />,
   }
 ]);
 
