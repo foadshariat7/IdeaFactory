@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { auth } from '../../firebase'
 import { signInWithEmailAndPassword } from 'firebase/auth'
+import { Link } from "react-router-dom";
+import { Form, Button, Card, Alert } from 'react-bootstrap'
 
 const SignIn = () => {
     const [email, setEmail] = useState('')
@@ -31,7 +33,18 @@ const SignIn = () => {
                 <input type="password" placeholder='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)}></input>
                 <button type="submit">Log In</button>
             </form>
+
+            <div className="w-100 text-center mt-2">
+                Don't have an account?
+                <Link to="/signUp">
+                    <Button>
+                        <p>Sign Up</p>
+                    </Button>
+                </Link>
+            </div>
         </div>
+
+
     )
 }
 
