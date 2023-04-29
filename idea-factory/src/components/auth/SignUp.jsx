@@ -35,7 +35,6 @@ const SignUp = () => {
         //         <button type="submit">SignUp</button>
         //     </form>
         // </div>
-
         <>
             <Card>
                 <Card.Body>
