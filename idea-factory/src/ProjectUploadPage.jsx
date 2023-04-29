@@ -1,5 +1,7 @@
-import { Input } from 'antd';
+import { Input, Button } from 'antd';
 import { useState } from 'react';
+import { ProfileOutlined, HomeOutlined } from '@ant-design/icons';
+import { NavLink } from 'react-router-dom'
 import { Breadcrumb, Layout, Menu } from 'antd';
 import ProjectUploadForm from './components/ProjectUploadForm';
 const { Header, Content, Footer } = Layout;
@@ -22,6 +24,16 @@ const ProjectUploadPage = () => {
             };
           })}
         />
+        <NavLink to={"/userProfile"}>
+          <Button type="primary" icon={<ProfileOutlined />} size={20}>
+            Profile
+          </Button>
+        </NavLink>
+        <NavLink to={"/"}>
+          <Button type="primary" icon={<HomeOutlined />} size={20}>
+            Home
+          </Button>
+        </NavLink>
       </Header>
       <Content
         style={{

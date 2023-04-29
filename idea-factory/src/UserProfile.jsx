@@ -1,6 +1,9 @@
 import React from 'react'
-import { Breadcrumb, Layout, Menu, theme, Card } from 'antd';
+import { Breadcrumb, Layout, Menu, theme, Card, Input, Button  } from 'antd';
+import { UploadOutlined, HomeOutlined } from '@ant-design/icons';
 const { Header, Content, Footer } = Layout;
+import { NavLink } from 'react-router-dom'
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -31,6 +34,16 @@ const UserProfile = () => {
                 };
               })}
             />
+            <NavLink to={"/projectUpload"}>
+              <Button type="primary" icon={<UploadOutlined />} size={20}>
+                Upload
+              </Button>
+            </NavLink>
+            <NavLink to={"/"}>
+              <Button type="primary" icon={<HomeOutlined />} size={20}>
+                Home
+              </Button>
+            </NavLink>
           </Header>
           <Content
             style={{
