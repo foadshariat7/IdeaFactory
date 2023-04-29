@@ -16,7 +16,8 @@ const SignUp = () => {
                 // Signed in
                 console.log(userCredential)
                 // const user = userCredential.user;
-                // ...
+                // Redirect to the sign in page
+                window.location.href = "/signIn"
             }).catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
