@@ -1,7 +1,10 @@
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Breadcrumb, Layout, Menu, theme, Input, Button } from 'antd';
+import { DownloadOutlined } from '@ant-design/icons';
+import { NavLink } from 'react-router-dom'
 import ProjectRow from './components/ProjectRow';
 import { Pagination } from 'antd';
 const { Header, Content, Footer } = Layout;
+const { Search } = Input;
 
 const MainPage = () => {
   const {
@@ -9,6 +12,7 @@ const MainPage = () => {
   } = theme.useToken();
   return (
     <Layout className="layout">
+  
       <Header>
         <div className="logo"></div>
         <Menu
@@ -23,6 +27,12 @@ const MainPage = () => {
             };
           })}
         />
+        <Search placeholder='Search' allowClear onSearch={onSearch} style={{ width: 200 }}/>
+        <NavLink to={"/userProfile"}>
+          <Button type="primary" icon={<DownloadOutlined />} size={20}>
+            Profile
+          </Button>
+        </NavLink>
       </Header>
       <Content
         style={{
@@ -69,6 +79,8 @@ const MainPage = () => {
     </Layout>
   );
 };
+
+const onSearch = value => alert(value);
 
 export default MainPage;
 
