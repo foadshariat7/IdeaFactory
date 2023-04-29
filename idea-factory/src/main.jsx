@@ -22,7 +22,11 @@ const router = createBrowserRouter([
   {
     path: "/projectUpload",
     element: <ProjectUploadPage></ProjectUploadPage>
-  }
+  }, 
+  {
+    path: "/",
+    element: <MainPage />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

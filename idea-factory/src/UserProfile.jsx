@@ -1,10 +1,14 @@
 import React from 'react'
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Breadcrumb, Layout, Menu, theme, Card } from 'antd';
 const { Header, Content, Footer } = Layout;
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ProjectRow from './components/ProjectRow';
+import UserRelatedProjects from './components/UserRelatedProjects';
+import Skill from './components/Skill';
+import Experience from './components/Experience';
 
 const UserProfile = () => {
     const {
@@ -40,14 +44,9 @@ const UserProfile = () => {
               <Breadcrumb.Item>Home</Breadcrumb.Item>
               <Breadcrumb.Item>User Profile</Breadcrumb.Item>
             </Breadcrumb>
-            <div
-              className="site-layout-content"
-              style={{
-                background: colorBgContainer,
-              }}
-            >
-              Content
-            </div>
+            <Experience></Experience>
+            <Skill></Skill>
+            <UserRelatedProjects></UserRelatedProjects>
           </Content>
           <Footer
             style={{
