@@ -9,6 +9,8 @@ import {
 import MainPage from './MainPage.jsx';
 import UserProfile from './UserProfile.jsx';
 import ProjectUploadPage from './ProjectUploadPage.jsx';
+import SignIn from './components/auth/SignIn.jsx'
+import SignUp from './components/auth/SignUp.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,15 +20,23 @@ const router = createBrowserRouter([
   {
     path: "/userProfile",
     element: <UserProfile></UserProfile>
-  }, 
+  },
   {
     path: "/projectUpload",
     element: <ProjectUploadPage></ProjectUploadPage>
-  }, 
+  },
   {
     path: "/",
     element: <MainPage />,
   },
+  {
+    path: "/signIn",
+    element: <SignIn />,
+  },
+  {
+    path: "/signUp",
+    element: <SignUp />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
