@@ -2,17 +2,28 @@ import { Breadcrumb, Layout, Menu, theme, Input, Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom'
 import ProjectRow from './components/ProjectRow';
+import Project from './components/Project';
 import { Pagination } from 'antd';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 const { Header, Content, Footer } = Layout;
 const { Search } = Input;
 
 const MainPage = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    axios.get() // api here!!!
+      .then(res => res.data)
+      .then(setProjects);
+  }, []);
+
   const {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
     <Layout className="layout">
-  
+
       <Header>
         <div className="logo"></div>
         <Menu
@@ -54,14 +65,15 @@ const MainPage = () => {
             background: colorBgContainer,
           }}
         >
-          Project
-          <ProjectRow></ProjectRow>
-          <ProjectRow></ProjectRow>
-          <ProjectRow></ProjectRow>
-          <ProjectRow></ProjectRow>
-          <ProjectRow></ProjectRow>
-          <ProjectRow></ProjectRow>
-          <Pagination 
+          {projects.map((value) => {
+            return (
+              <Project
+                key={value._id}
+              />
+            );
+          })}
+
+          <Pagination
             style={{
               textAlign: 'center',
            }}
@@ -83,4 +95,3 @@ const MainPage = () => {
 const onSearch = value => alert(value);
 
 export default MainPage;
-
